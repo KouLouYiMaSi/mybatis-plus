@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    type : com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://172.16.36.34:3615/hawkeye?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      username: hawkeye_app
+      password: FaA8RYcZUL
+      driverClassName : com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  typeAliasesPackage: com.example.demo.entity
+  global-config:
+    id-type: 2
+    field-strategy: 2
+    db-column-underline: true
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+#∏¸∂‡mybatis-plus≈‰÷√«Î≤Œøºhttp://mp.baomidou.com/#/spring-boot
